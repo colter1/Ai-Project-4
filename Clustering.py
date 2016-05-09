@@ -121,7 +121,7 @@ def readFile(inputfile="data.txt"):
     infile = open(inputfile, 'r')
     data = []
     for line in infile:
-        point = line.split(',')
+        point = line.split(' ')
         data.append((int(point[0]), int(point[1])))
     return data
 

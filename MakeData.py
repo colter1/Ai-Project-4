@@ -72,7 +72,7 @@ def writeData(data, filename="data.txt"):
     outputfile = open(filename, 'w')
     outputfile.truncate()
     for point in data:
-        outputfile.write(str(point[0]) + ',' + str(point[1]) + '\n')
+        outputfile.write(str(point[0]) + ' ' + str(point[1]) + '\n')
     outputfile.close()
 
 def getParser():
